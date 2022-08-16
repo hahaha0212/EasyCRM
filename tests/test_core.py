@@ -26,7 +26,7 @@ class CoreTestCase(unittest.TestCase):
 
     def test_create_contact_route(self):
         rv = self.client.get('/contact/create')
-        self.assertEquals(rv.status_code, 201)
+        self.assertEquals(rv.status_code, 200)
 
     def test_create_contact_empty_data(self):
         data = {}
